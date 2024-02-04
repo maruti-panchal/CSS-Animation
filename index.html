@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height: 93vh;
+            background-image: url(./1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .BirdContainer{
+
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 48%;
+            animation: girlMover 8s infinite linear;
+            
+        }
+        @keyframes girlMover {
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(450px);
+            }
+        }
+        .bird{
+            width: 100px;
+            height: 100px;
+            background-image: url(./img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: girl 1s infinite steps(5);
+        }
+        @keyframes girl {
+            0%{
+                background-position: 0%;
+            }
+            100%{
+                background-position: 100%;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Bird</title>
+</head>
+<body>
+    <div class="BirdContainer">
+        <div class="bird"></div>
+    </div>
+</body>
+</html>
